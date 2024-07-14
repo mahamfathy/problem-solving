@@ -11,11 +11,18 @@ The first line of the input contains an integer x (1 ≤ x ≤ 1 000�
 using namespace std;
 int main()
 {
+    // int x;
+    // cin >> x;
+    // int full_steps = x / 5;
+    // int steps_left = x % 5 == 0 ? 0 : 1;
+    // int total_steps = full_steps + steps_left;
+    // cout << total_steps << endl;
     int x;
     cin >> x;
-    int full_steps = x / 5;
-    int steps_left = x % 5 == 0 ? 0 : 1;
-    int total_steps = full_steps + steps_left;
-    cout << total_steps << endl;
+
+    int total_steps = x / 5;
+    x %= 5;
+    total_steps += (x > 0) ? 1 : 0;
+    cout << total_steps;
     return 0;
 }
