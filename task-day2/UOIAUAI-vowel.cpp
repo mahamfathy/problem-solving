@@ -13,17 +13,22 @@ int main()
     //     cout << "Consonant" << endl;
     // }
     // or switch case //
-    switch (c)
-    {
-    case 'a':
-    case 'o':
-    case 'u':
-    case 'i':
-    case 'e':
-        cout << "vowel" << endl;
-        break;
-    default:
-        cout << "consonant" << endl;
-        break;
-    }
+    // switch (c)
+    // {
+    // case 'a':
+    // case 'o':
+    // case 'u':
+    // case 'i':
+    // case 'e':
+    //     cout << "vowel" << endl;
+    //     break;
+    // default:
+    //     cout << "consonant" << endl;
+    //     break;
+    // }
+
+    // or ternary operator //
+
+    cout << (c == 'a' || c == 'o' || c == 'e' || c == 'i' || c == 'u' ? "vowel" : "consonant") << endl;
+    return 0;
 }
