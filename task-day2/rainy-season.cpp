@@ -16,23 +16,49 @@ Constraints
 using namespace std;
 int main()
 {
-    string s;
-    cin >> s;
-    if (s == "RRR")
+    string S;
+    cin >> S;
+    if (S == "RRR")
     {
         cout << "3" << endl;
     }
-    else if (s == "RRS" || s == "RSR" || s == "SRR")
+    else if (S == "RRS" || S == "RSR" || S == "SRR")
     {
         cout << "2" << endl;
     }
-    else if (s == "RSS" || s == "SSR" || s == "SRS")
+    else if (S == "RSS" || S == "SRS" || S == "SSR")
     {
         cout << "1" << endl;
     }
-    else
+    else if (S == "SSS")
     {
         cout << "0" << endl;
-    };
+    }
+
+    // for loop //
+
+    /*
+     string s;
+    cin >> s;
+    int max_rainy_days = 0;
+    int current_rainy_days = 0;
+    for (char c : s) {
+        if (c == 'R') {
+            current_rainy_days++;
+        } else {
+            if (current_rainy_days > max_rainy_days) {
+                max_rainy_days = current_rainy_days;
+            }
+            current_rainy_days = 0;
+        }
+    }
+    if (current_rainy_days > max_rainy_days) {
+        max_rainy_days = current_rainy_days;
+    }
+
+    cout << max_rainy_days << endl;
+
+    */
+
     return 0;
 }
