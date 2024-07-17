@@ -36,9 +36,14 @@ int main()
     {
         cout << "eight" << endl;
     }
-    else if (n > 8)
+    else if (n == 9)
     {
-        cout << "greater than 9" << endl;
+        cout << "nine" << endl;
     }
+    else
+    {
+        cout << "Greater than 9" << endl;
+    }
+
     return 0;
 }
