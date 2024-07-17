@@ -7,7 +7,7 @@ int main()
     cin >> w;
     cout << (w % 2 == 0 && w > 2 ? "YES" : "NO") << endl;
     // or //
-    cout << (w % 2 == 0 || w == 2 ? "YES" : "NO") << endl;
+    // cout << (w % 2 == 0 || w == 2 ? "YES" : "NO") << endl;
 
     // or //
 
