@@ -4,28 +4,11 @@ int main()
 {
     int a, b, c;
     cin >> a >> b >> c;
-    if ((a + b) % 2 == 0)
-    {
-        if (c == 0)
-        {
-            cout << "Aoki" << endl;
-        }
-        else
-        {
-            cout << "Takahashi" << endl;
-        }
-    }
+    if (a > b)
+        cout << "Takahashi" << endl;
+    else if (a < b)
+        cout << "Aoki" << endl;
     else
-    {
-        if (c == 1)
-        {
-            cout << "Aoki" << endl;
-        }
-        else
-        {
-            cout << "Takahashi" << endl;
-        }
-    }
-
+        cout << (c == 0 ? "Aoki" : "Takahashi") << endl;
     return 0;
 }
