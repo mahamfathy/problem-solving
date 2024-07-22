@@ -8,5 +8,7 @@ int main()
     // int arr[size]; so wrong
     int *arr = new int[size];
     cout << arr[size] << endl;
+    delete arr;
+
     return 0;
 }
