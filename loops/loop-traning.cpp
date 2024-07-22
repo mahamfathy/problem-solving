@@ -19,6 +19,46 @@ int main()
     cout << "result is: " << result << endl;
 
     // 2- guess the number //
+    int guessNumber = 7;
+    int guessTries = 0;
+    cout << "guess the number from 1 to 10: " << endl;
+    int number;
+
+    // while (guessTries < 3 && number != guessNumber)
+    // {
+    //     cin >> number;
+
+    //     guessTries++;
+    //     if (number == guessNumber)
+    //     {
+    //         cout << "you win" << endl;
+    //         continue;
+    //     }
+
+    //     cout << "try again: " << endl;
+    // }
+
+    // or
+    while (true)
+    {
+        cin >> number;
+        if (number == guessNumber)
+        {
+            cout << "you win" << endl;
+            break;
+        }
+        else
+        {
+            cout << "try again: " << endl;
+            guessTries++;
+        }
+        if (guessTries == 3)
+        {
+            cout << "sorry, you lose" << endl;
+
+            break;
+        }
+    }
 
     return 0;
 }
