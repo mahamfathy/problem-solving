@@ -6,13 +6,14 @@ int main()
     while (i < 5)
     {
         cout << i << endl;
+        // if i wanna break it manually use break
+
         if (i == 2)
         {
             break;
         }
         i++;
     }
-    // if i wanna break it manually use break
 
     return 0;
 }
