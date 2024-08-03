@@ -18,8 +18,7 @@ Constraints
 using namespace std;
 int main()
 {
-    int a = 1 && a <= 12;
-    int b = 1 && b <= 30;
+    int a, b;
     cin >> a >> b;
     // if (a == b)
     // {
