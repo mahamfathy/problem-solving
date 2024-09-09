@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstring>
+#include <string>
 using namespace std;
 int main()
 {
@@ -11,8 +12,8 @@ int main()
     // cout << out << endl;
     // cout << strlen(str) << endl;
     // cout << str << endl;
-    char str1[] = "Hello ";
-    char str2[] = "World";
+    // char str1[] = "Hello ";
+    // char str2[] = "World";
     // int compare = strcmp(str1, str2);
     // cout << compare << endl;
     // if (compare == 0)
@@ -26,5 +27,13 @@ int main()
     // strcat(str1, str2);
     // cout << str1 << endl;
     // cout << strncat(str1, str2, 3) << endl;
+    // char str1[] = "hello world hello world";
+    // char *pt = strchr(str1, 'b');
+    // if (pt != nullptr)
+    //     cout << pt - str1 << endl;
+    // else
+    //     cout << nullptr << " not found" << endl;
+    string string1(6, 'r');
+    cout << string1 << endl;
     return 0;
 }
