@@ -33,7 +33,13 @@ int main()
     //     cout << pt - str1 << endl;
     // else
     //     cout << nullptr << " not found" << endl;
-    string string1(6, 'r');
-    cout << string1 << endl;
+    // string string1(6, 'r');
+    // cout << string1 << endl;
+    string s = "hello";
+    s.push_back('o');
+    s.append(" world");
+
+    cout
+        << s << endl;
     return 0;
 }
