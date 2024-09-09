@@ -38,8 +38,8 @@ int main()
     string s = "hello";
     s.push_back('o');
     s.append(" world");
-
-    cout
-        << s << endl;
+    cout << s << endl;
+    s.pop_back();
+    cout << s << endl;
     return 0;
 }
