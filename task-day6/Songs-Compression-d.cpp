@@ -12,15 +12,15 @@ int main()
         int a, b;
         cin >> a >> b;
         arr[i] = a - b;
-        sum += arr[i];
+        sum += a;
     }
-    sort(arr, arr + n, greater<>);
+    sort(arr, arr + n, greater<>());
     int i = 0;
     while (i < n and sum > m)
     {
         sum -= arr[i];
         i++;
     }
-    cout << ((sum > m) ? -1 : i) << end;
+    cout << (sum > m ? -1 : i) << "\n";
     return 0;
 }
