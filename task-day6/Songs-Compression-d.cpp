@@ -14,13 +14,13 @@ int main()
         arr[i] = a - b;
         sum += arr[i];
     }
-        sort(arr, arr+ n, greater<>);
+    sort(arr, arr + n, greater<>);
     int i = 0;
     while (i < n and sum > m)
     {
         sum -= arr[i];
         i++;
     }
-    cout << ((s > sum) ? -1 : i) << end;
-     return 0;
+    cout << ((sum > m) ? -1 : i) << end;
+    return 0;
 }
