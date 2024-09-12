@@ -12,7 +12,7 @@ int main()
     reverse(arr, arr + n);
     int temp = min_element(arr, arr + n) - arr;
     int mnPos = n - temp - 1;
-    int sum = mxPos + (n - mnPos - 1);
-
+    int ans = mxPos + (n - mnPos - 1);
+    cout << (mxPos > mnPos ? ans - 1 : ans);
     return 0;
 }
