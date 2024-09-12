@@ -20,7 +20,7 @@ int main()
     }
     int sum = 0;
     for (int i = 0; i < n; i++)
-        sum + -arr[i];
+        sum += arr[i];
     cout << sum << endl;
     return 0;
 }
