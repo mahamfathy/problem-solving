@@ -55,19 +55,18 @@ int main()
                 cout << "No job for Ada?" << '\n';
                 continue;
             }
-                            if (!rev)
-                {
-                    cout << deq.back() << '\n';
-                    deq.pop_back();
-                }
-                else
-                {
-                    cout << deq.front() << '\n';
-                    deq.pop_front();
-               
+            if (!rev)
+            {
+                cout << deq.back() << '\n';
+                deq.pop_back();
+            }
+            else
+            {
+                cout << deq.front() << '\n';
+                deq.pop_front();
             }
         }
-         if (s == "reverse")
+        if (s == "reverse")
             rev = !rev;
     }
     return 0;
