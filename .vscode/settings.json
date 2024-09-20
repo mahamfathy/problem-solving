@@ -51,7 +51,8 @@
     "cstring": "cpp",
     "forward_list": "cpp",
     "list": "cpp",
-    "span": "cpp"
+    "span": "cpp",
+    "bitset": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
