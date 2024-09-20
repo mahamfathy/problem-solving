@@ -52,7 +52,11 @@
     "forward_list": "cpp",
     "list": "cpp",
     "span": "cpp",
-    "bitset": "cpp"
+    "bitset": "cpp",
+    "any": "cpp",
+    "ranges": "cpp",
+    "stacktrace": "cpp",
+    "regex": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
