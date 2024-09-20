@@ -1,42 +1,30 @@
-
-
 #include <bits/stdc++.h>
 using namespace std;
-#define endl '\n'
+#define endl '\n';
 int main()
 {
     ios_base::sync_with_stdio(false), cin.tie(nullptr), cout.tie(nullptr);
     stack<int> st;
-    int T;
-    cin >> T;
-
-    while (T--)
+    int t;
+    cin >> t;
+    while (t--)
     {
-        int query;
-        cin >> query;
-        if (query == 1)
+        int n;
+        cin >> n;
+        switch (n)
         {
-            int n;
-            cin >> n;
-            st.push(n);
-        }
-        else if (query == 2)
-        {
+        case 1:
+            int x;
+            cin >> x;
+            st.push(x);
+            break;
+        case 2:
             if (!st.empty())
-            {
                 st.pop();
-            }
-        }
-        else if (query == 3)
-        {
-            if (!st.empty())
-            {
-                cout << st.top() << endl;
-            }
-            else
-            {
-                cout << "Empty!" << endl;
-            }
+            break;
+        case 3:
+            cout << (st.empty() ? "Empty!" : to_string(st.top())) << endl;
+            break;
         }
     }
 
