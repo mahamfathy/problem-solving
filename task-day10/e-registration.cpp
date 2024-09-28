@@ -25,6 +25,7 @@
 //     return 0;
 // }
 #include <bits/stdc++.h>
+
 using namespace std;
 
 #define endl '\n'
@@ -42,7 +43,7 @@ int main()
         if (mp.find(s) == mp.end())
             cout << "OK" << endl;
         else
-            cout << s << map[s] << endl;
+            cout << s << mp[s] << endl;
         mp[s]++;
     }
     return 0;
