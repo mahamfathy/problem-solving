@@ -10,23 +10,25 @@ int main()
     string seq;
     cin >> dir >> seq;
     map<char, char> mp;
-    string msg;
     if (dir == 'L')
     {
-        for (int i = 0; i < keyboard.size() - 1; i++)
+        for (int i = 0; i < keyboard.size(); i++)
         {
-            mp[keyboard[i + 1]] = keyboard[i];
+            mp[keyboard[i]] = keyboard[i - 1];
         }
     }
     else if (dir == 'R')
     {
-        for (int i = 1; i < keyboard.size(); i++)
+        for (int i = 1; i < keyboard.size() - 1; i++)
         {
-            mp[keyboard[i - 1]] = keyboard[i];
+            mp[keyboard[i]] = keyboard[i + 1];
         }
     }
+    string msg;
     for (char ch : seq)
+    {
         msg += mp[ch];
+    }
     cout << msg << endl;
     return 0;
 }
