@@ -12,14 +12,14 @@ int main()
     map<char, char> mp;
     if (dir == 'L')
     {
-        for (int i = 0; i < keyboard.size(); i++)
+        for (size_t i = 1; i < keyboard.size(); i++)
         {
             mp[keyboard[i]] = keyboard[i - 1];
         }
     }
     else if (dir == 'R')
     {
-        for (int i = 1; i < keyboard.size() - 1; i++)
+        for (size_t i = 0; i < keyboard.size() - 1; i++)
         {
             mp[keyboard[i]] = keyboard[i + 1];
         }
