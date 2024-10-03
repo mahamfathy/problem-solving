@@ -6,7 +6,6 @@ int sum(string s)
     int res = 0;
     for (auto i : s)
         res += (i - '0');
-    // res += stoi(i);
     return res;
 }
 int super_digit(string s)
