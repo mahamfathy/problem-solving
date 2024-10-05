@@ -1,18 +1,20 @@
-// #include <bits/stdc++.h>
-// using namespace std;
-// #define endl '\n'
-// vector<int> removeNumber(vector<int> v, int i, int x)
-// {
-//     if (i == v.size())
-//         return v;
-//     if (v[i] == x)
-//     {
-//         v.erase(v.begin() + i);
-//         return removeNumber(v, i, x);
-//     }
-//     else
-//         return removeNumber(v, i + 1, x);
-// }
+
+// runtime error
+//  #include <bits/stdc++.h>
+//  using namespace std;
+//  #define endl '\n'
+//  vector<int> removeNumber(vector<int> v, int i, int x)
+//  {
+//      if (i == v.size())
+//          return v;
+//      if (v[i] == x)
+//      {
+//          v.erase(v.begin() + i);
+//          return removeNumber(v, i, x);
+//      }
+//      else
+//          return removeNumber(v, i + 1, x);
+//  }
 
 // int main()
 // {
